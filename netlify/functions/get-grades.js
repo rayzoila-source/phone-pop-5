@@ -1,5 +1,4 @@
-const fetch = require('node-fetch');
-
+// Native fetch available in Node 18+ (Netlify default)
 const BASE_ID  = 'appneQX5pDz3OGfON';
 const TABLE_ID = 'tblwfWGWqZbJ3V5Oa';
 
