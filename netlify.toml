@@ -8,8 +8,15 @@
 [build.environment]
   NODE_VERSION = "18"
 
+# Route tsb subdomain to /tsb/ page
+[[redirects]]
+  from = "https://tsb.phonepop5.virtualautomotiv.com/*"
+  to   = "/tsb/:splat"
+  status = 200
+  force  = true
+
 [[headers]]
   for = "/*"
   [headers.values]
-    X-Frame-Options         = "SAMEORIGIN"
-    X-Content-Type-Options  = "nosniff"
+    X-Frame-Options        = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
