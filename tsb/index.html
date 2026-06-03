@@ -41,14 +41,12 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 12px 48px;
+            padding: 10px 48px;
             border-bottom: 2px solid #eb0a1e;
             position: sticky;
             top: 0;
-            background: #ffffff;
-            backdrop-filter: blur(12px);
+            background: #111111;
             z-index: 100;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.12);
         }
 
         .nav-logo {
@@ -790,11 +788,20 @@
 <!-- NAV -->
 <nav>
     <a href="https://tsb.virtualautomotiv.com" class="nav-logo">
-        <img src="https://tsb.grader.virtualautomotiv.com/tsb-online-logo.png"
-             alt="TSB Online" style="height:38px; width:auto; display:block;" />
+        <span class="logo-virtual" style="color:#eb0a1e;">TSB</span>
+        <span class="logo-automotiv" style="color:#ffffff; font-size:11px; letter-spacing:2px;">ONLINE</span>
     </a>
     <span class="nav-badge">Phone Pop 5</span>
 </nav>
+
+<!-- TSB SPLASH HEADER -->
+<div style="background:#ffffff; padding:18px 48px; text-align:center; border-bottom:3px solid #eb0a1e;">
+    <a href="https://tsb.virtualautomotiv.com">
+        <img src="https://tsb.grader.virtualautomotiv.com/tsb-online-logo.png"
+             alt="TSB Online"
+             style="height:72px; width:auto;" />
+    </a>
+</div>
 
 <!-- CONTEXT BANNER -->
 <div class="context-banner" id="context-banner" style="display:none;">
@@ -805,10 +812,6 @@
 
 <!-- HERO -->
 <div class="hero">
-    <div style="margin-bottom:20px;">
-        <img src="https://tsb.grader.virtualautomotiv.com/tsb-online-logo.png"
-             alt="TSB Online" style="height:64px; width:auto;" />
-    </div>
     <div class="hero-tag">Play 2 of 3 &middot; Phone Skills Training</div>
     <h1 style="background: none; -webkit-text-fill-color: #eb0a1e; color: #eb0a1e;">PHONE POP 5</h1>
     <h2>The Phone-to-Appointment System</h2>
