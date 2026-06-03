@@ -1033,8 +1033,8 @@
         <div class="rule-card danger">
             <div class="rule-icon">🚫</div>
             <div>
-                <div class="rule-title">Never Quote a Price</div>
-                <div class="rule-desc">The moment you give a number, they shop that number — not your car. Your only job on the phone is to bring them in. Numbers belong at the desk, not on the call.</div>
+                <div class="rule-title">Sales Staff Cannot Quote a Price — Ever</div>
+                <div class="rule-desc">When a customer asks for a price, use the GM-Approved Word Track below. If the word track doesn't set the appointment, immediately execute a Manager Live Turn. The manager closes the appointment live on the phone.</div>
             </div>
         </div>
         <div class="rule-card">
@@ -1155,6 +1155,22 @@
                 </div>
                 <div class="grader-points">20 pts</div>
             </div>
+            <div class="grader-item" onclick="toggleCheck(this)" data-points="15" style="border: 1px solid rgba(160,80,255,0.3); border-radius: 10px; padding: 15px 12px; background: rgba(160,80,255,0.04); margin: 8px 0;">
+                <div class="grader-checkbox"></div>
+                <div class="grader-item-info">
+                    <div class="grader-item-title" style="color: #cc88ff;">Used GM-Approved Word Track (if price was asked)</div>
+                    <div class="grader-item-sub">Delivered the approved response — did not quote a number</div>
+                </div>
+                <div class="grader-points">15 pts</div>
+            </div>
+            <div class="grader-item" onclick="toggleCheck(this)" data-points="15" style="border: 1px solid rgba(160,80,255,0.3); border-radius: 10px; padding: 15px 12px; background: rgba(160,80,255,0.04); margin: 8px 0;">
+                <div class="grader-checkbox"></div>
+                <div class="grader-item-info">
+                    <div class="grader-item-title" style="color: #cc88ff;">Executed Manager Live Turn (if word track didn't close)</div>
+                    <div class="grader-item-sub">Got manager on the phone live — did not end the call without an attempt</div>
+                </div>
+                <div class="grader-points">15 pts</div>
+            </div>
             <div class="grader-item" onclick="toggleCheck(this)" data-points="10">
                 <div class="grader-checkbox"></div>
                 <div class="grader-item-info">
@@ -1230,12 +1246,24 @@
                 <button class="copy-btn" onclick="copyScript(this)">Copy</button>
             </div>
         </div>
-        <div class="script-card">
-            <div class="script-step-badge">No Price on the Phone</div>
-            <h4>When They Push for a Number</h4>
+        <div class="script-card" style="border-color: rgba(0,170,255,0.4); background: rgba(0,85,255,0.05);">
+            <div class="script-step-badge" style="background: rgba(0,170,255,0.15); border-color: rgba(0,170,255,0.4); color: #00ddff;">⭐ GM-Approved Word Track</div>
+            <h4 style="color: #00aaff;">When They Ask for a Price</h4>
             <div class="script-quote">
-                "I'd actually be doing you a disservice if I threw out a number without knowing your full situation — trade, credit, all of it. What I can promise is that when you come in, I'll work with my manager to get you the best deal possible. Can I get you in today?"
+                "I completely understand — and I want to make sure you get the absolute best deal possible. I'm not able to give you a number over the phone that I can actually stand behind, because I don't know your trade, your credit situation, or what incentives you qualify for. What I can tell you is that when you come in, I'll sit down with my manager personally and make sure we put together the best deal we can for you. I have [time] or [time] available today — which one works better for you?"
                 <button class="copy-btn" onclick="copyScript(this)">Copy</button>
+            </div>
+        </div>
+
+        <div class="script-card" style="border-color: rgba(160,80,255,0.4); background: rgba(160,80,255,0.05);">
+            <div class="script-step-badge" style="background: rgba(160,80,255,0.15); border-color: rgba(160,80,255,0.4); color: #cc88ff;">🔁 Manager Live Turn</div>
+            <h4 style="color: #cc88ff;">When the Word Track Doesn't Set the Appointment</h4>
+            <p style="font-size:13px; color: var(--gray-light); margin-bottom: 12px; line-height:1.6;">If the customer still won't commit after the GM word track, do not end the call. Put them on a brief hold and get your manager on the phone live — right now. The manager's job is to set the appointment.</p>
+            <div class="script-quote" style="border-left-color: #cc88ff; color: #e8ccff;">
+                <strong style="color:#cc88ff; font-style:normal;">TO THE CUSTOMER:</strong> "You know what — I want to make sure you're taken care of at the highest level. Can I put you on hold for just one second? I want to grab my manager so they can speak with you directly."<br><br>
+                <strong style="color:#cc88ff; font-style:normal;">BRIEF HOLD — GET MANAGER NOW.</strong><br><br>
+                <strong style="color:#cc88ff; font-style:normal;">MANAGER INTRO:</strong> "Hi [Customer Name], this is [Manager Name], the Sales Manager here at [Dealership]. I understand you had some questions — I want to personally make sure we take care of you today. I have [time] or [time] available, which works better for you?"
+                <button class="copy-btn" onclick="copyScript(this)" style="top: 12px;">Copy</button>
             </div>
         </div>
         <div class="script-card">
