@@ -112,7 +112,7 @@
             top: 0; left: 50%;
             transform: translateX(-50%);
             width: 900px; height: 500px;
-            background: radial-gradient(ellipse at center, rgba(0, 85, 255, 0.14) 0%, transparent 70%);
+            background: radial-gradient(ellipse at center, rgba(235,10,30, 0.14) 0%, transparent 70%);
             pointer-events: none;
         }
 
@@ -247,7 +247,7 @@
             transition: border-color 0.3s;
             cursor: pointer;
         }
-        .step-card:hover { border-color: rgba(0, 85, 255, 0.4); }
+        .step-card:hover { border-color: rgba(235,10,30, 0.4); }
         .step-card.active { border-color: #eb0a1e; }
 
         .step-header {
@@ -582,7 +582,7 @@
         .script-step-badge {
             display: inline-block;
             background: rgba(235, 10, 30, 0.12);
-            border: 1px solid rgba(0, 85, 255, 0.3);
+            border: 1px solid rgba(235,10,30, 0.3);
             color: #eb0a1e;
             font-size: 10px;
             font-weight: 700;
@@ -682,7 +682,7 @@
             cursor: pointer;
             transition: all 0.2s;
         }
-        .ctx-mode.self    { background: rgba(0,85,255,0.15); color: #eb0a1e; border: 1px solid rgba(235,10,30,0.3); }
+        .ctx-mode.self    { background: rgba(235,10,30,0.15); color: #eb0a1e; border: 1px solid rgba(235,10,30,0.3); }
         .ctx-mode.manager { background: rgba(160,80,255,0.15); color: #cc88ff; border: 1px solid rgba(160,80,255,0.3); }
 
         /* ── GRADE HISTORY ── */
@@ -841,7 +841,7 @@
 
 <!-- THE MANTRA -->
 <div style="background: linear-gradient(135deg, #1a0000 0%, #0d0000 100%); border-top: 1px solid #eb0a1e44; border-bottom: 1px solid #eb0a1e44; padding: 56px 48px; text-align: center;">
-    <p style="font-family:'Orbitron',monospace; font-size:11px; font-weight:700; letter-spacing:4px; text-transform:uppercase; color:#0055ff; margin-bottom:20px;">The Mantra</p>
+    <p style="font-family:'Orbitron',monospace; font-size:11px; font-weight:700; letter-spacing:4px; text-transform:uppercase; color:#eb0a1e; margin-bottom:20px;">The Mantra</p>
     <h2 style="font-family:'Orbitron',monospace; font-weight:900; font-size:clamp(22px,4vw,40px); line-height:1.3; background:linear-gradient(180deg,#fff 0%,#e8ecf0 30%,#b0b8cc 70%,#8892a4 100%); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; max-width:760px; margin:0 auto 20px;">
         It's all about the appointment.<br>Always find a way to ask.<br><span style="text-decoration:underline; text-decoration-color:#eb0a1e; text-underline-offset:6px; text-decoration-thickness:3px;">No exceptions.</span>
     </h2>
@@ -1253,8 +1253,8 @@
                 <button class="copy-btn" onclick="copyScript(this)">Copy</button>
             </div>
         </div>
-        <div class="script-card" style="border-color: rgba(0,170,255,0.4); background: rgba(0,85,255,0.05);">
-            <div class="script-step-badge" style="background: rgba(0,170,255,0.15); border-color: rgba(0,170,255,0.4); color: #eb0a1e;">⭐ GM-Approved Word Track</div>
+        <div class="script-card" style="border-color: rgba(235,10,30,0.4); background: rgba(235,10,30,0.05);">
+            <div class="script-step-badge" style="background: rgba(235,10,30,0.15); border-color: rgba(235,10,30,0.4); color: #eb0a1e;">⭐ GM-Approved Word Track</div>
             <h4 style="color: #eb0a1e;">When They Ask for a Price</h4>
             <div class="script-quote" style="font-size: 16px; line-height: 1.8;">
                 "You've already won with our online verified best price."<br><br>
@@ -1375,7 +1375,7 @@
 
     function gradeColor(score) {
         if (score >= 90) return '#00ff88';
-        if (score >= 75) return '#00aaff';
+        if (score >= 75) return '#eb0a1e';
         if (score >= 60) return '#ffaa00';
         if (score >= 45) return '#ff8c00';
         return '#ff4444';
